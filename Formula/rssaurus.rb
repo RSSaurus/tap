@@ -5,21 +5,21 @@
 class Rssaurus < Formula
   desc "RSSaurus command-line client"
   homepage "https://rssaurus.com"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RSSaurus/rssaurus-cli/releases/download/v0.1.4/rssaurus_0.1.4_darwin_amd64.tar.gz"
-      sha256 "3123df1d311dce813bc9a924aff1f0edad9408a4707411f84f8fc1b701a551e4"
+      url "https://github.com/RSSaurus/rssaurus-cli/releases/download/v0.1.5/rssaurus_0.1.5_darwin_amd64.tar.gz"
+      sha256 "7f96a24c95cd1db55d7f98ec08e14dfad2c9ff30a96c95186f97d9908931ca0d"
 
       def install
         bin.install "rssaurus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RSSaurus/rssaurus-cli/releases/download/v0.1.4/rssaurus_0.1.4_darwin_arm64.tar.gz"
-      sha256 "c5c2fd0289b47a395174e19c1ab843cbf6fdea6da0c8e42365f41e2bc9a2d294"
+      url "https://github.com/RSSaurus/rssaurus-cli/releases/download/v0.1.5/rssaurus_0.1.5_darwin_arm64.tar.gz"
+      sha256 "3706c8edeccb20756de54f0a22ca490d20643f6e8e6db05bbd0c105a3a9f883c"
 
       def install
         bin.install "rssaurus"
@@ -29,15 +29,15 @@ class Rssaurus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RSSaurus/rssaurus-cli/releases/download/v0.1.4/rssaurus_0.1.4_linux_amd64.tar.gz"
-      sha256 "8b3c79cf9dfa9adb4aa6c81e563790611c98f25c1ed26e3a61f2c9d391bdcbee"
+      url "https://github.com/RSSaurus/rssaurus-cli/releases/download/v0.1.5/rssaurus_0.1.5_linux_amd64.tar.gz"
+      sha256 "0ce33fc0670ef8913b1b1003d6145635456e3abac1a60d7602a0acbe80669ee5"
       def install
         bin.install "rssaurus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RSSaurus/rssaurus-cli/releases/download/v0.1.4/rssaurus_0.1.4_linux_arm64.tar.gz"
-      sha256 "7351302ee85fb6c662cfda3aab8e1587aba5823f40f60335f8e1711a70d898b7"
+      url "https://github.com/RSSaurus/rssaurus-cli/releases/download/v0.1.5/rssaurus_0.1.5_linux_arm64.tar.gz"
+      sha256 "fec16b2f09b3f72189a1efa3bf059f3560771f690fc29cfe6c10e68029fc44ee"
       def install
         bin.install "rssaurus"
       end
